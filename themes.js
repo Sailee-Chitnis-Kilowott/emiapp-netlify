@@ -51,12 +51,12 @@ let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
 const enableDarkTheme = () => {
     DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
     document.getElementById("theme-toggler").innerHTML = "🌞 Light";
-  document.getElementById("image1").setAttribute("src",Light_Theme_Image);
+  document.getElementById("image2").setAttribute("src",Light_Theme_Image);
 }
 const disableDarkTheme = () => {
     DARK_STYLE_LINK.setAttribute("href", "");
     document.getElementById("theme-toggler").innerHTML = "🌙 Dark";
-    document.getElementById("image1").setAttribute("src",Dark_Theme_Image);
+    document.getElementById("image2").setAttribute("src",Dark_Theme_Image);
 }
 // check if user has already selected dark theme earlier
 if (isDark) {
